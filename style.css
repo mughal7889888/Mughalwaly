@@ -1,0 +1,127 @@
+/* General layout tweaks */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Template cards on template.php */
+.template-card {
+    transition: box-shadow 0.15s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.template-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Resume base styles */
+.resume-template {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Template 1 (classic) */
+.resume-template-1 .resume-name {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.resume-template-1 .resume-contact {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+.resume-template-1 .resume-photo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #dee2e6;
+}
+
+.resume-template-1 .resume-section {
+    margin-top: 1.5rem;
+}
+
+.resume-template-1 .resume-section-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.resume-template-1 .resume-skills-list {
+    list-style: square;
+    padding-left: 1.2rem;
+}
+
+/* Template 2 (modern) */
+.resume-header-modern {
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    color: #ffffff;
+    padding: 1.25rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.resume-header-modern .resume-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.resume-header-modern .resume-contact {
+    font-size: 0.9rem;
+}
+
+.resume-photo-modern {
+    max-width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+}
+
+.resume-body-modern {
+    background-color: #ffffff;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-top: none;
+}
+
+.resume-template-2 .resume-section {
+    margin-top: 1rem;
+}
+
+.resume-template-2 .resume-section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0d6efd;
+    margin-bottom: 0.5rem;
+}
+
+.resume-skills-list-modern {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.resume-skills-list-modern li {
+    background-color: #f1f3f5;
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    margin: 0 0.35rem 0.35rem 0;
+    font-size: 0.85rem;
+}
+
+/* Small adjustments for mobile */
+@media (max-width: 576px) {
+    .resume-template {
+        font-size: 0.95rem;
+    }
+
+    .resume-header-modern {
+        text-align: center;
+    }
+}
